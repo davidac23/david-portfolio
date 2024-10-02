@@ -1,0 +1,60 @@
+---
+import ExperienceItem from "./ExperienceItem.astro"
+import React from "./icons/React.astro"
+import Aws from "./icons/Aws.astro"
+import Typescript from "./icons/Typescript.astro"
+import Tailwind from "./icons/Tailwind.astro"
+import Figma from "./icons/Figma.astro"
+
+const EXPERIENCE = [
+  {
+    date: "May 2021 - Present",
+    title: "Frontend web developer",
+    company: "Spotlio",
+    descriptions:[
+      "Developed and maintained frontend components for ski resort websites, ensuring performance, responsiveness, and cross-browser compatibility.",
+      "Implemented e-commerce flows for selling ski-related products such as lift tickets, lodgings, and activities.",
+      "Used a CMS to  allow easy management of website content by non-technical users.",
+      "Implemented Apple Weather Kit API to our backend after our previous provider stopped service, ensuring continuous access to weather data for our platform.",
+      "Worked in a commerce console where clients could  access and manage their orders, sales data, and analytics."
+    ],
+    tech_tags: [
+      {
+        name: "React",
+        class: "bg-black text-white",
+        icon: React,
+      },
+      {
+        name: "Tailwind CSS",
+        class: "bg-[#003159] text-white",
+        icon: Tailwind,
+      },
+      {
+        name: "",
+        class: "bg-white text-black mx-2 border",
+        icon: Aws,
+      },
+      {
+        name: "Typescript",
+        class: "bg-black text-white dark:bg-white dark:text-black",
+        icon: Typescript,
+      },
+      {
+        name: "Figma",
+        class: "bg-black text-white dark:bg-white dark:text-black",
+        icon: Figma,
+      },
+    ]
+  },
+]
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>

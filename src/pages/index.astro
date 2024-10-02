@@ -1,0 +1,51 @@
+---
+import Layout from "@/layouts/Layout.astro"
+
+import Education from "@/components/Education.astro"
+import Briefcase from "@/components/icons/Briefcase.astro"
+import CodeIcon from "@/components/icons/Code.astro"
+import Experience from "@/components/Experience.astro"
+import EducationIcon from "@/components/icons/EducationIcon.astro"
+import Projects from "@/components/Projects.astro"
+import SectionContainer from "@/components/SectionContainer.astro"
+import Hero from "@/components/Hero.astro"
+import TitleSection from "@/components/TitleSection.astro"
+---
+
+<Layout
+  title="David Almirall - Portfolio"
+  description=""
+>
+  <main class="px-4">
+    <SectionContainer class="py-16 md:py-36">
+      <Hero>
+      </slot>
+    </Hero>
+    </SectionContainer>
+    <div class="space-y-24">
+    <SectionContainer id="work-experience">
+      <TitleSection>
+        <Briefcase class="size-8" />
+        Work experience
+      </TitleSection>
+      <Experience />
+    </SectionContainer>
+
+    <SectionContainer id="projects">
+      <TitleSection>
+        <CodeIcon class="size-7" />
+        Projects
+      </TitleSection>
+      <Projects />
+    </SectionContainer>
+
+    <SectionContainer id="about-me">
+      <TitleSection>
+        <EducationIcon  class="size-8"/>
+        Education
+      </TitleSection>
+      <Education />
+    </SectionContainer>
+  </div>
+  </main>
+</Layout>
