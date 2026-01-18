@@ -1,0 +1,72 @@
+---
+import SectionContainer from "@/components/SectionContainer.astro"
+import TitleSection from "@/components/TitleSection.astro"
+import SkillsIcon from "./icons/SkillsIcon.astro"
+---
+
+<SectionContainer id="skills" class="mt-8">
+  <TitleSection>
+    <SkillsIcon class="size-8" />
+    Core Skills
+  </TitleSection>
+
+  <div class="grid md:grid-cols-2 gap-x-12 gap-y-8 mt-4">
+    <!-- Technologies Section -->
+    <div class="flex flex-col">
+      <h3 class="text-xl font-semibold mb-6 text-gray-800 dark:text-white">
+        Technologies
+      </h3>
+      <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-lg">
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>JavaScript / TypeScript</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>React / Gatsby</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>CMS integrations & custom content systems</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>APIs & third-party service integrations</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>Multi-platform applications (web, desktop, APK)</span>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Expertise Section -->
+    <div class="flex flex-col">
+      <h3 class="text-xl font-semibold mb-6 text-gray-800 dark:text-white">
+        Expertise
+      </h3>
+      <ul class="space-y-3 text-gray-700 dark:text-gray-300 text-lg">
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>E-commerce & payment flows (online & in-store, including physical devices)</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>Accessibility (WCAG standards)</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>Performance optimization & SEO</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>Legacy system modernization</span>
+        </li>
+        <li class="flex items-start">
+          <span class="mr-3 text-yellow-500 font-bold">•</span>
+          <span>UI/UX collaboration & product-focused development</span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</SectionContainer>
