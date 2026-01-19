@@ -11,6 +11,7 @@ import SectionContainer from "@/components/SectionContainer.astro"
 import Hero from "@/components/Hero.astro"
 import TitleSection from "@/components/TitleSection.astro"
 import Skills from "@/components/Skills.astro"
+import ExperienceContext from "@/components/ExperienceContext.astro"
 ---
 
 <Layout
@@ -29,10 +30,10 @@ import Skills from "@/components/Skills.astro"
         <Briefcase class="size-8" />
         Work experience
       </TitleSection>
+      <ExperienceContext />
       <Experience />
-      <Skills/>
     </SectionContainer>
-
+    <Skills/>
     <SectionContainer id="projects">
       <TitleSection>
         <CodeIcon class="size-7" />

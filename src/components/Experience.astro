@@ -6,23 +6,25 @@ import Typescript from "./icons/Typescript.astro"
 import Tailwind from "./icons/Tailwind.astro"
 import Figma from "./icons/Figma.astro"
 import AngularJS from "./icons/AngularJS.astro"
+import Gatsby from "./icons/Gatsby.astro"
 
 const EXPERIENCE = [
   
   {
     date: "January 2025 - Present",
-    title: "Frontend web developer",
+    title: "Frontend / Software Engineer",
     company: "Clorian",
+    descriptionTitle: "Worked on modern commerce applications used in both online and physical sales environments, interacting with real payment devices.",
     descriptions:[
-      "Migrated a legacy ATM system to a modern architecture using up-to-date technologies and libraries, improving UI quality, accessibility compliance, and long-term maintainability.",
+      "Migrated a legacy ATM system to a modern architecture using modern technologies, improving UI quality, accessibility, and long-term maintainability.",
       "Built and integrated payment flows for both online and in-store sales, including payments, refunds, and printing, using Adyen’s API and physical payment devices.",
       "Worked on a multi-platform application capable of generating Android (APK) and desktop applications, supporting real-world commerce use cases.",
-      "Improved overall system stability and developer experience by upgrading outdated dependencies and Node.js versions across multiple projects.",
+      "mproved system stability and developer experience by upgrading outdated dependencies and Node.js versions across multiple projects.",
     ],
     tech_tags: [
       {
         name: "React",
-        class: "bg-black text-white",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
         icon: React,
       },      
       {
@@ -32,12 +34,12 @@ const EXPERIENCE = [
       },
       {
         name: "Typescript",
-        class: "bg-black text-white dark:bg-white dark:text-black",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
         icon: Typescript,
       },
       {
         name: "AngularJS",
-        class: "bg-black text-white dark:bg-white dark:text-black",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
         icon: AngularJS,
       },
     ]
@@ -46,18 +48,23 @@ const EXPERIENCE = [
     date: "May 2021 - December 2024",
     title: "Frontend web developer",
     company: "Spotlio",
+    descriptionTitle: "Worked on a CMS-driven web platform with a custom content model, built with Gatsby for static rendering and high performance, integrating seamless in-page e-commerce flows without external checkout redirects.",
     descriptions:[
       "Developed and maintained CMS-powered websites with integrated e-commerce, enabling clients to customize content and manage products directly on their platforms.",
       "Built scalable, performant web applications using React and Gatsby, focusing on SEO-friendly and high-traffic content.",
       "Integrated third-party services, such as weather data APIs and booking systems, ensuring reliable real-time data rendering.",
-      "Worked closely with design and backend teams to improve UI quality, maintainability, and performance across multiple client projects.",
     ],
     tech_tags: [
       {
         name: "React",
-        class: "bg-black text-white",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
         icon: React,
       },
+      {
+        name: "Gatsby",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
+        icon: Gatsby,
+      },  
       {
         name: "Tailwind CSS",
         class: "bg-[#003159] text-white",
@@ -70,12 +77,12 @@ const EXPERIENCE = [
       },
       {
         name: "Typescript",
-        class: "bg-black text-white dark:bg-white dark:text-black",
+        class: "dark:bg-black dark:text-white bg-white text-black border dark:border-none",
         icon: Typescript,
       },
       {
         name: "Figma",
-        class: "bg-black text-white dark:bg-white dark:text-black",
+        class: "bg-white text-black border",
         icon: Figma,
       },
     ]
